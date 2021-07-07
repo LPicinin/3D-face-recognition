@@ -115,28 +115,6 @@ for index in range(200):
         # shutil.rmtree(f'{dest_dir}/{index + 1}')
 
 # Passo da reconstrução
-""" saída
-Pessoa 3 tem 1.0 fotos inválidas, imagens retiradas do dataset: -> ['08']
-Pessoa 4 tem 2.0 fotos inválidas, imagens retiradas do dataset: -> ['07', '08']
-Pessoa 18 tem 1.0 fotos inválidas, imagens retiradas do dataset: -> ['08']
-Pessoa 21 tem 2.0 fotos inválidas, imagens retiradas do dataset: -> ['07', '08']
-Pessoa 23 tem 1.0 fotos inválidas, imagens retiradas do dataset: -> ['08']
-Pessoa 29 tem 1.0 fotos inválidas, imagens retiradas do dataset: -> ['03']
-Pessoa 33 tem 1.0 fotos inválidas, imagens retiradas do dataset: -> ['08']
-Pessoa 45 tem 1.0 fotos inválidas, imagens retiradas do dataset: -> ['08']
-Pessoa 63 tem 1.0 fotos inválidas, imagens retiradas do dataset: -> ['03']
-Pessoa 79 tem 1.0 fotos inválidas, imagens retiradas do dataset: -> ['08']
-Pessoa 107 tem 2.0 fotos inválidas, imagens retiradas do dataset: -> ['03', '08']
-Pessoa 113 tem 1.0 fotos inválidas, imagens retiradas do dataset: -> ['08']
-Pessoa 139 tem 1.0 fotos inválidas, imagens retiradas do dataset: -> ['03']
-Pessoa 142 tem 1.0 fotos inválidas, imagens retiradas do dataset: -> ['08']
-Pessoa 144 tem 1.0 fotos inválidas, imagens retiradas do dataset: -> ['08']
-Pessoa 154 tem 1.0 fotos inválidas, imagens retiradas do dataset: -> ['08']
-Pessoa 178 tem 1.0 fotos inválidas, imagens retiradas do dataset: -> ['08']
-Pessoa 179 tem 1.0 fotos inválidas, imagens retiradas do dataset: -> ['03']
-Pessoa 181 tem 4.0 fotos inválidas, imagens retiradas do dataset: -> ['03', '04', '07', '08']
-"""
-
 """
 import os
 import cv2
