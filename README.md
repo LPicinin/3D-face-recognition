@@ -2,6 +2,16 @@
 # Deep Neural Network of multiple input with 3D data applied to Face Recognition
 Projeto de graduação do curso de Ciência da Computação
 
+## Arquivos
+O download dos arquivos e diretórios maiores de 100MB podem ser feitos atrvés dos links a seguir:
+
+ - [trainch.npz](https://drive.google.com/file/d/1S3wWEzDT57EBEOgkm7x5thQNzIHH9K6E/view?usp=sharing)
+ - [testch.npz](https://drive.google.com/file/d/12fmtd10e7hip8sl2vzuHP5bMgxGRd1rh/view?usp=sharing)
+ - [pesos_avaliados](https://drive.google.com/drive/folders/1boMIkpfQQViZQbXffzN-znJP0s7cq-0X?usp=sharing)
+ - [dataset](https://drive.google.com/drive/folders/1CqrJ_xKKU-4IPibKt-rmIg-9FfTIGNhO?usp=sharing)
+ - [experimento](https://drive.google.com/drive/folders/1iv2-rJs2H9t2GneuAdAbU6cB3Zzr2Guw?usp=sharing)
+ - [weights](https://drive.google.com/drive/folders/1n10MeEUxyNJuIyFIqsU7pHepExmY7HHV?usp=sharing)
+
 ## Dependências
 A maioria dos scripts podem ser executados após a instalações das seguintes bibliotecas a baixo:
 
