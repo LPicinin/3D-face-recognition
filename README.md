@@ -15,6 +15,7 @@ O download dos arquivos e diretórios maiores de 100MB podem ser feitos atrvés 
 ## Dependências
 A maioria dos scripts podem ser executados após a instalações das seguintes bibliotecas a baixo:
 
+ - pip install numpy
  - pip install opencv-contrib-python==4.5.2.54
  - pip install tensorflow==2.3.2
  - pip install torch==1.8.1+cpu torchvision==0.9.1+cpu torchaudio===0.8.1 -f https://download.pytorch.org/whl/lts/1.8/torch_lts.html
