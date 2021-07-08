@@ -9,8 +9,6 @@ import numpy as np  # linear algebra
 # For example, running this (by clicking run or pressing Shift+Enter) will list the files in the input directory
 
 import os
-
-# Any results you write to the current directory are saved as output.
 from pix2vertex import Detector
 
 '''
@@ -37,33 +35,12 @@ class Data_augmentation:
         self.value_brilho = 5
 
     def rotate(self, image, angle=0, scale=1.0):
-        '''
-        Rotate the image
-        :param image: image to be processed
-        :param angle: Rotation angle in degrees. Positive values mean counter-clockwise rotation (the coordinate origin is assumed to be the top-left corner).
-        :param scale: Isotropic scale factor.
-        '''
         w = image.shape[1]
         h = image.shape[0]
         # rotate matrix
         M = cv2.getRotationMatrix2D((w / 2, h / 2), angle, scale)
         # rotate
         image = cv2.warpAffine(image, M, (w, h))
-        return image
-
-    def flip(self, image, vflip=False, hflip=False):
-        '''
-        Flip the image
-        :param image: image to be processed
-        :param vflip: whether to flip the image vertically
-        :param hflip: whether to flip the image horizontally
-        '''
-        if hflip or vflip:
-            if hflip and vflip:
-                c = -1
-            else:
-                c = 0 if vflip else 1
-            image = cv2.flip(image, flipCode=c)
         return image
 
     def brightness(self, img, value=0):
@@ -94,9 +71,6 @@ class Data_augmentation:
             images.append(self.brightness(images[i], self.value_brilho))
             images.append(self.brightness(images[i], -self.value_brilho))
 
-        # cv2.imwrite(save_path + '%s' % str(name_int) + '_vflip.jpg', img_flip)
-        # cv2.imwrite(save_path + '%s' % str(name_int) + '_rot.jpg', img_rot)
-        # cv2.imwrite(save_path + '%s' % str(name_int) + '_GaussianNoise.jpg', img_gaussian)
         if detector is not None:
             for img_valid in images:
                 _, _, rec = detector.detect_and_crop(img_valid)
@@ -104,10 +78,3 @@ class Data_augmentation:
                     return images, False
             return images, True
         return images
-
-    def main(file_dir, output_path):
-        for root, _, files in os.walk(file_dir):
-            print(root)
-        for file in files:
-            raw_image = Data_augmentation(root, file)
-            raw_image.image_augment(output_path)
