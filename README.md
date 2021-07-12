@@ -1,6 +1,5 @@
 
 # Deep Neural Network of multiple input with 3D data applied to Face Recognition
-Projeto de graduação do curso de Ciência da Computação
 
 ## Arquivos
 O download dos arquivos e diretórios maiores de 100MB podem ser feitos atrvés dos links a seguir:
