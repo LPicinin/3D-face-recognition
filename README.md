@@ -2,7 +2,7 @@
 # Deep Neural Network of multiple input with 3D data applied to Face Recognition
 
 ## Arquivos
-O download dos arquivos e diretórios maiores de 100MB podem ser feitos atrvés dos links a seguir:
+O download dos arquivos e diretórios maiores de 100MB podem ser feitos através dos links a seguir:
 
  - [trainch.npz](https://drive.google.com/file/d/1S3wWEzDT57EBEOgkm7x5thQNzIHH9K6E/view?usp=sharing)
  - [testch.npz](https://drive.google.com/file/d/12fmtd10e7hip8sl2vzuHP5bMgxGRd1rh/view?usp=sharing)
